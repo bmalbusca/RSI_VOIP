@@ -1,3 +1,11 @@
+# Git    :wavy_dash:
+
+ [Tutorial](https://github.com/bmalbusca/git_getting_started) (click here!)
+
+
+
+________
+
 # RSI_VOIP ()
 
  *Project files - Asterisk* 
@@ -5,8 +13,6 @@
   - sip.conf (users)
   - extension.conf (rules)
 
-
-________
 
 ## 1. Use a VM with Asterisk as Server (Virtual Box and MAC)
 
