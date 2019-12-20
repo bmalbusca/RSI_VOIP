@@ -38,3 +38,7 @@ ________
 
 ***Done***
 
+
+#POST Request - CTT POSTAL
+
+``` curl -X POST -H 'Content-Type: application/json'  http://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx\?cp4\=1000\&cp3\=048\&method%3AsearchPC2\=Procurar ```
