@@ -2,12 +2,12 @@
 import requests as req
 import json
 import sys
-from lxml import html
+from lxml import html #You need to install all this packages
 from asterisk.agi import * #you need to install pyst2 
 
 #agi = AGI()
 
-def set_var(name_var, value):    
+def set_var(name_var, value):    #see the manual asterisk reference
     sys.stdout.write("SET VARIABLE %s %s \"\"\n" %(name_var,value)) 
     sys.stdout.flush()
     sys.stdout.write("SET VARIABLE %s %s \"\"\n" %(name_var,value)) 
@@ -22,7 +22,7 @@ try:
     code1=str(sys.argv[1]) 
     code2=str(sys.argv[2])
 
-except: 
+except:      #see in the asterisk manual - parsing env variables 
     
     while True:
         line = sys.stdin.readline().strip()         
@@ -44,7 +44,7 @@ except:
 
 try:
 
-    try:
+    try:    #try to use the pyst2 instead using while 
         #code1 = agi.get_variable('num1')
         #code2 = agi.get_variable('num2')
         pass 
