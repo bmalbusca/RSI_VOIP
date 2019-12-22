@@ -1,9 +1,10 @@
 
-# Option 4
+# Option 4 - CTT Postal Code
 
-- agi set debug on
-- chmod 777 
-- install pyst2 w/ pip
+- After execute the server, run: ``` agi set debug on ```
+- You need to give permissions to google..agi and postctt: ``` chmod 777 file``` 
+- install pyst2 w/ pip 
+- try to run first the file like: ./postctt 
 
 # Git    :wavy_dash:
 
