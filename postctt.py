@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 import requests as req
 import json
 import sys
 from lxml import html
 from asterisk.agi import * #you need to install pyst2 
 
-#agi = AGI()
+#agi = AGI() #pyst2
 
 def set_var(name_var, value):    
     sys.stdout.write("SET VARIABLE %s %s \"\"\n" %(name_var,value)) 
@@ -14,9 +14,15 @@ def set_var(name_var, value):
     sys.stdout.flush()
     pass 
 
+
+
+
+
 asterisk_env = {}
 code1=""
 code2=""
+
+
 
 try:
     code1=str(sys.argv[1]) 
@@ -44,7 +50,7 @@ except:
 
 try:
 
-    try:
+    try: #pyst2
         #code1 = agi.get_variable('num1')
         #code2 = agi.get_variable('num2')
         pass 
@@ -66,7 +72,7 @@ try:
 
 
 
-    #agi.set_variable('str', string)
+    #agi.set_variable('str', string) #pyst2
     set_var('str', string)
 
 except:
