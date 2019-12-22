@@ -5,7 +5,7 @@ import sys
 from lxml import html #You need to install all this packages
 from asterisk.agi import * #you need to install pyst2 
 
-#agi = AGI()
+#agi = AGI() #pyst2
 
 def set_var(name_var, value):    #see the manual asterisk reference
     sys.stdout.write("SET VARIABLE %s %s \"\"\n" %(name_var,value)) 
@@ -14,9 +14,15 @@ def set_var(name_var, value):    #see the manual asterisk reference
     sys.stdout.flush()
     pass 
 
+
+
+
+
 asterisk_env = {}
 code1=""
 code2=""
+
+
 
 try:
     code1=str(sys.argv[1]) 
@@ -44,6 +50,7 @@ except:      #see in the asterisk manual - parsing env variables
 
 try:
 
+
     try:    #try to use the pyst2 instead using while 
         #code1 = agi.get_variable('num1')
         #code2 = agi.get_variable('num2')
@@ -66,7 +73,7 @@ try:
 
 
 
-    #agi.set_variable('str', string)
+    #agi.set_variable('str', string) #pyst2
     set_var('str', string)
 
 except:
