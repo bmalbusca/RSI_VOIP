@@ -1,3 +1,10 @@
+
+# Option 4
+
+- agi set debug on
+- chmod 777 
+- install pyst2 w/ pip
+
 # Git    :wavy_dash:
 
  [Tutorial](https://github.com/bmalbusca/git_getting_started) (click here!)
